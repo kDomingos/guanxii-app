@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "338034517906",
+    "project_id": "guanxii-app",
+    "storage_bucket": "guanxii-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338034517906:android:1499daeaf5d6313935834b",
+        "android_client_info": {
+          "package_name": "com.guanxii.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338034517906-nttlbso31qdmja7jj5qkqarhju7tgm52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHgzZxGKlBFxWhi8tc6ZYtUQRg6BP6-DA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338034517906-nttlbso31qdmja7jj5qkqarhju7tgm52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338034517906:android:46dca0069faa4cb435834b",
+        "android_client_info": {
+          "package_name": "com.guanxii.qr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338034517906-nttlbso31qdmja7jj5qkqarhju7tgm52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHgzZxGKlBFxWhi8tc6ZYtUQRg6BP6-DA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338034517906-nttlbso31qdmja7jj5qkqarhju7tgm52.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
