@@ -20,7 +20,6 @@ import 'package:qr_code_sample/profiles/anti_profile.dart';
 import 'package:qr_code_sample/profiles/link_profile.dart';
 import 'package:qr_code_sample/profiles/personal_profile.dart';
 import 'package:qr_code_sample/profiles/prof_profile.dart';
-import 'package:qr_code_sample/qrscanner.dart';
 import 'package:qr_code_sample/utilities/firebase_utilities.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

@@ -548,13 +548,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.1"
-  simple_vcard_parser:
-    dependency: "direct main"
-    description:
-      name: simple_vcard_parser
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.6"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -651,13 +644,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.1+1"
-  vcard_parser:
-    dependency: "direct main"
-    description:
-      name: vcard_parser
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.6"
   vector_math:
     dependency: transitive
     description:
