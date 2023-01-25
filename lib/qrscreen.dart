@@ -217,9 +217,9 @@ class _QRScreenState extends State<QRScreen> {
                               format: ImageByteFormat.png);
                           Uint8List? pngBytes = byteData?.buffer.asUint8List();
                           // print('11111111 bytes $pngBytes');
-                          final tempDir = await getExternalStorageDirectory();
+                          final tempDir = await getApplicationDocumentsDirectory();
                           final file = await File(
-                                  '${tempDir?.path}/${DateTime.now().toString()}qrimage.png')
+                                  '${tempDir.path}/${DateTime.now().toString()}qrimage.png')
                               .create();
                           // print('11111111 file created $file');
                           await file.writeAsBytes(pngBytes!);
