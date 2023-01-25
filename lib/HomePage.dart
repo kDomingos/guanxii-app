@@ -1220,7 +1220,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           ),
                                           child: const Center(
                                             child: Text(
-                                              'Creaate Anti-Creep Profile',
+                                              'Create Anti-Creep Profile',
                                               style: TextStyle(
                                                   color: Colors.white),
                                             ),

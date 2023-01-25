@@ -87,14 +87,14 @@ class _QRScreenState extends State<QRScreen> {
 
   GlobalKey globalKey = new GlobalKey();
   var vCard = VCard();
-  String? _name;
-  String? _number;
-  String? _email;
-  String? _birthday;
-  String? _website;
-  String? _image;
-  String? _profilename;
-  String _dataString = "";
+  String? name;
+  String? number;
+  String? email;
+  String? birthday;
+  String? website;
+  String? image;
+  String? profilename;
+  String dataString = "";
   Payload? payload;
   @override
   void initState() {
