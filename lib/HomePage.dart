@@ -1,6 +1,5 @@
 // ignore_for_file: use_build_context_synchronously
 
-import 'dart:convert';
 import 'dart:ui';
 
 import 'package:cached_network_image/cached_network_image.dart';
@@ -8,18 +7,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:qr_code_sample/ProfilePage.dart';
 import 'package:qr_code_sample/constants.dart';
 import 'package:qr_code_sample/edit_profiles/edit_personal_profile.dart';
-import 'package:qr_code_sample/login.dart';
-import 'package:qr_code_sample/models/avatars.dart';
-import 'package:qr_code_sample/models/profile.dart';
 import 'package:qr_code_sample/profile.dart';
-import 'package:qr_code_sample/profiles/anti_profile.dart';
-import 'package:qr_code_sample/profiles/link_profile.dart';
 import 'package:qr_code_sample/profiles/personal_profile.dart';
-import 'package:qr_code_sample/profiles/prof_profile.dart';
-import 'package:qr_code_sample/utilities/firebase_utilities.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -92,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
         'Cancel',
         style: TextStyle(color: Colors.white),
       ),
-      style: ElevatedButton.styleFrom(primary: Colors.blue),
+      style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
     );
     Widget continueButton = ElevatedButton(
       onPressed: () async {
@@ -110,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
         'Delete',
         style: TextStyle(color: Colors.white),
       ),
-      style: ElevatedButton.styleFrom(primary: Colors.red),
+      style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
     );
 
     // set up the AlertDialog
@@ -285,7 +276,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: const Center(
                         child: Text(
                       'Create Profile',
-                      style: const TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white),
                     )),
                   ),
                 ),
@@ -300,7 +291,6 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  final _editprofilenameformKey = GlobalKey<FormState>();
   editshowprofilenameDialog(BuildContext context, String docid,
       String profilename, String usingprofile) {
     showDialog(
@@ -333,7 +323,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 const Text(
                   'Please name your Profile',
-                  style: const TextStyle(
+                  style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                       fontSize: 20),
@@ -448,7 +438,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: const Center(
                         child: Text(
                       'Update Profile',
-                      style: const TextStyle(color: Colors.white),
+                      style: TextStyle(color: Colors.white),
                     )),
                   ),
                 ),
@@ -477,7 +467,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   'No',
                   style: TextStyle(color: Colors.white),
                 ),
-                style: ElevatedButton.styleFrom(primary: Colors.blue),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
               ),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).pop(true),
@@ -485,7 +475,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   'Yes',
                   style: TextStyle(color: Colors.white),
                 ),
-                style: ElevatedButton.styleFrom(primary: Colors.blue),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
               ),
             ],
           ),
@@ -1048,10 +1038,12 @@ class _MyHomePageState extends State<MyHomePage> {
           elevation: 0.0,
           color: Colors.transparent, //Color(0xFF62AEFB),
           child: Container(
-            height: height * 0.21, //set your height here
+            height: height * 0.18, //set your height here
             width: width,
             //set your width here
-            decoration: const BoxDecoration(
+            decoration:  BoxDecoration(
+              border: Border.all(
+                width: 0, color: Color(0xFFE2EEF6)),
               color: Color(0xFFE2EEF6),
             ),
             //borderRadius: BorderRadius.vertical(top: Radius.circular(20.0))),
@@ -1060,7 +1052,8 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Container(
+                Flexible(
+                child: Container(
                   height: height * 0.2, //set your height here
                   width: width / 0.05,
                   //color: Colors.black,
@@ -1238,6 +1231,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: const Color(0xFF3F4D4E),
                         gaplessPlayback: true,
                       )),
+                ),
                 ),
 
                 //add as many tabs as you want here
