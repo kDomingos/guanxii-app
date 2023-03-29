@@ -79,11 +79,11 @@ class _MyHomePageState extends State<MyHomePage> {
     // set up the buttons
     Widget cancelButton = ElevatedButton(
       onPressed: () => Navigator.of(context).pop(false),
+      style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
       child: const Text(
         'Cancel',
         style: TextStyle(color: Colors.white),
       ),
-      style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
     );
     Widget continueButton = ElevatedButton(
       onPressed: () async {
@@ -97,21 +97,21 @@ class _MyHomePageState extends State<MyHomePage> {
           Navigator.pop(context);
         });
       },
+      style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
       child: const Text(
         'Delete',
         style: TextStyle(color: Colors.white),
       ),
-      style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
     );
 
     // set up the AlertDialog
     AlertDialog alert = AlertDialog(
       title: Text(
-        "Delete profile " + name,
+        "Delete profile $name",
         textAlign: TextAlign.center,
       ),
       content: const Text(
-        "Deleteing this profile will remove all data",
+        "Deleting this profile will remove all data",
         textAlign: TextAlign.center,
       ),
       actions: [
@@ -171,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 const SizedBox(
                   height: 20,
                 ),
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width / 1.2,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -332,7 +332,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 const SizedBox(
                   height: 20,
                 ),
-                Container(
+                SizedBox(
                   width: MediaQuery.of(context).size.width / 1.2,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -463,19 +463,19 @@ class _MyHomePageState extends State<MyHomePage> {
             actions: <Widget>[
               ElevatedButton(
                 onPressed: () => Navigator.of(context).pop(false),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
                 child: const Text(
                   'No',
                   style: TextStyle(color: Colors.white),
                 ),
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
               ),
               ElevatedButton(
                 onPressed: () => Navigator.of(context).pop(true),
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
                 child: const Text(
                   'Yes',
                   style: TextStyle(color: Colors.white),
                 ),
-                style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
               ),
             ],
           ),
@@ -491,6 +491,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return WillPopScope(
       onWillPop: _onWillPop,
       child: Scaffold(
+        extendBody: true,
         resizeToAvoidBottomInset: false,
         backgroundColor: Colors.transparent, // Color(0xFF62AEFB),
         // appBar: AppBar(EEFE
@@ -586,7 +587,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       child: Center(
                                         child: Image.asset(
                                           widget.ava == ""
-                                              ? '$avatarimageurl'
+                                              ? avatarimageurl
                                               : snapshot.data!.avatarimage,
                                           cacheWidth: 50 *
                                               window.devicePixelRatio.ceil(),
@@ -1043,8 +1044,8 @@ class _MyHomePageState extends State<MyHomePage> {
             //set your width here
             decoration:  BoxDecoration(
               border: Border.all(
-                width: 0, color: Color(0xFFE2EEF6)),
-              color: Color(0xFFE2EEF6),
+                width: 0, color: const Color(0xFFE2EEF6)),
+              color: const Color(0xFFE2EEF6),
             ),
             //borderRadius: BorderRadius.vertical(top: Radius.circular(20.0))),
             child: Column(
@@ -1053,7 +1054,7 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Flexible(
-                child: Container(
+                child: SizedBox(
                   height: height * 0.2, //set your height here
                   width: width / 0.05,
                   //color: Colors.black,
