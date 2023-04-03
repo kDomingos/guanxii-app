@@ -11,7 +11,7 @@ import 'package:flutter/services.dart';
 import 'package:gallery_saver/gallery_saver.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:qr_code_sample/models/personalmodel.dart';
+import 'package:guanxii_app/models/personalmodel.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:vcard_maintained/vcard_maintained.dart';
 

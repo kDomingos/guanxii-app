@@ -7,10 +7,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'package:qr_code_sample/constants.dart';
-import 'package:qr_code_sample/edit_profiles/edit_personal_profile.dart';
-import 'package:qr_code_sample/profile.dart';
-import 'package:qr_code_sample/profiles/personal_profile.dart';
+import 'package:guanxii_app/constants.dart';
+import 'package:guanxii_app/edit_profiles/edit_personal_profile.dart';
+import 'package:guanxii_app/profile.dart';
+import 'package:guanxii_app/profiles/personal_profile.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class MyHomePage extends StatefulWidget {

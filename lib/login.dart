@@ -4,10 +4,10 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:qr_code_sample/HomePage.dart';
-import 'package:qr_code_sample/constants.dart';
-import 'package:qr_code_sample/forgetpassword.dart';
-import 'package:qr_code_sample/utilities/firebase_utilities.dart';
+import 'package:guanxii_app/HomePage.dart';
+import 'package:guanxii_app/constants.dart';
+import 'package:guanxii_app/forgetpassword.dart';
+import 'package:guanxii_app/utilities/firebase_utilities.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {

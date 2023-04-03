@@ -1,4 +1,4 @@
-# qr_code_sample
+# guanxii_app
 
 A new Flutter project.
 

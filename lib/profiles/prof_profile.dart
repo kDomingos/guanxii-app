@@ -6,7 +6,7 @@ import 'package:intl/intl.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:intl_phone_field/phone_number.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:qr_code_sample/constants.dart';
+import 'package:guanxii_app/constants.dart';
 
 class ProfProfileScreen extends StatefulWidget {
   ProfProfileScreen(this.name);

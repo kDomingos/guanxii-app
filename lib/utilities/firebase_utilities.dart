@@ -3,8 +3,8 @@ import 'dart:io';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:qr_code_sample/constants.dart';
-import 'package:qr_code_sample/models/profile.dart';
+import 'package:guanxii_app/constants.dart';
+import 'package:guanxii_app/models/profile.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class FirebaseUtils {

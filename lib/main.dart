@@ -1,8 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:qr_code_sample/HomePage.dart';
-import 'package:qr_code_sample/constants.dart';
-import 'package:qr_code_sample/login.dart';
+import 'package:guanxii_app/HomePage.dart';
+import 'package:guanxii_app/constants.dart';
+import 'package:guanxii_app/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/services.dart';
 

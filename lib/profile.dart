@@ -1,11 +1,11 @@
 import 'dart:convert';
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:qr_code_sample/HomePage.dart';
-import 'package:qr_code_sample/biodata.dart';
-import 'package:qr_code_sample/constants.dart';
-import 'package:qr_code_sample/login.dart';
-import 'package:qr_code_sample/models/avatars.dart';
+import 'package:guanxii_app/HomePage.dart';
+import 'package:guanxii_app/biodata.dart';
+import 'package:guanxii_app/constants.dart';
+import 'package:guanxii_app/login.dart';
+import 'package:guanxii_app/models/avatars.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ProfileScreen extends StatefulWidget {

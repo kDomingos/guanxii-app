@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:qr_code_sample/login.dart';
-import 'package:qr_code_sample/utilities/firebase_utilities.dart';
+import 'package:guanxii_app/login.dart';
+import 'package:guanxii_app/utilities/firebase_utilities.dart';
 
 class ForgotPassword extends StatefulWidget {
   const ForgotPassword({Key? key}) : super(key: key);

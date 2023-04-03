@@ -5,14 +5,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:qr_code_sample/edit_qrScreen.dart';
-import 'package:qr_code_sample/models/personalmodel.dart';
+import 'package:guanxii_app/edit_qrScreen.dart';
+import 'package:guanxii_app/models/personalmodel.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import 'package:intl_phone_field/phone_number.dart';
 import 'package:intl/intl.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:qr_code_sample/constants.dart';
-import 'package:qr_code_sample/qrscreen.dart';
+import 'package:guanxii_app/constants.dart';
+import 'package:guanxii_app/qrscreen.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class EditPersonalProfileScreen extends StatefulWidget {
